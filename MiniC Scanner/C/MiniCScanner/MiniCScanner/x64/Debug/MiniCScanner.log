@@ -1,0 +1,10 @@
+﻿  Main.cpp
+  Scanner.cpp
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(49,2): error C2065: 'tchar': 선언되지 않은 식별자입니다.
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(49,13): error C2065: 'tdouble': 선언되지 않은 식별자입니다.
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(49,24): error C2065: 'tfor': 선언되지 않은 식별자입니다.
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(49,33): error C2065: 'tdo': 선언되지 않은 식별자입니다.
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(49,43): error C2065: 'tgoto': 선언되지 않은 식별자입니다.
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(49,54): error C2065: 'tswitch': 선언되지 않은 식별자입니다.
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(49,65): error C2065: 'tcase': 선언되지 않은 식별자입니다.
+  코드를 생성하고 있습니다...

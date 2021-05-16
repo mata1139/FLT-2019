@@ -32,28 +32,38 @@ char *tokenName[] = {
 	//   ...........    word symbols ................................. //
 	/* 30         31         32        33         34         35        */
 	"const",    "else",     "if",      "int",     "return",  "void",
-	/* 36         37         38        39                              */
-	"while",    "{",        "||",       "}"
+	/* 36         37         38        39         40                   */
+	"while",    "{",        "||",       "}"       ":"
 };
 
 char *keyword[NO_KEYWORD] = {
-	"const",  "else",    "if",    "int",    "return",  "void",    "while"
+	"const",  "else",    "if",    "int",    "return",  "void",    "while",
+
+	//추가 확장 부분
+	"char",   "double",  "for",   "do",     "goto",    "switch",  "case",
+
+	"break",  "default"
 };
 
+
 enum tsymbol tnum[NO_KEYWORD] = {
-	tconst,    telse,     tif,     tint,     treturn,   tvoid,     twhile
+	tconst,    telse,     tif,     tint,     treturn,   tvoid,     twhile,
+	//추가 확장 부분
+	tchar,     tdouble,   tfor,    tdo,      tgoto,     tswitch,   tcase, 
+	
+	tbreak,    tdefault
 };
 
 struct tokenType scanner()
 {
-	struct tokenType token;
+	struct tokenType token;  
 	int i, index;
 	char ch, id[ID_LENGTH];
 
 	token.number = tnull;
 
 	do {
-		while (isspace(ch = fgetc(sourceFile)));	// state 1: skip blanks
+		while (isspace(ch = fgetc(sourceFile)));	// state 1: skip blanks isspace->공백이면 0반환, fgetc 한글자씩 로드
 		if (superLetter(ch)) { // identifier or keyword
 			i = 0;
 			do {
@@ -186,6 +196,9 @@ struct tokenType scanner()
 		case '{': token.number = tlbrace;         break;
 		case '}': token.number = trbrace;         break;
 		case EOF: token.number = teof;            break;
+		//추가 확장 colon 연산자
+		case ':': token.number = tcolon;          break;
+
 		default: {
 			printf("Current character : %c", ch);
 			lexicalError(4);

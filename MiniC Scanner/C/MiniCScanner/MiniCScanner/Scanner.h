@@ -14,6 +14,7 @@ struct tokenType { //toeknType class
 	union {
 		char id[ID_LENGTH]; //identifier
 		int num; //실제 value
+		double d_num; //double 자료형 value
 	} value;
 };
 
@@ -40,8 +41,8 @@ enum tsymbol {
 	/* 42         43          44        45           46         47         48   */
 	  tfor,       tdo,       tgoto,   tswitch,      tcase,    tbreak,    tdefault,
 
-	//49 : 연산자 추가 확장
-	 tcolon
+	//49          50          51        52
+	 tcolon,    tchars,     tstring,   tdoubles
 };
 
 

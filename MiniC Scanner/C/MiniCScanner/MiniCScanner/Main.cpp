@@ -41,7 +41,7 @@ void main(int argc, char *argv[])
 	token = scanner();
 	
 	while (token.number != teof) {
-
+		token.filename = fileName;
 		printf("Current Token --> ");
 		printToken(token);
 		token = scanner();

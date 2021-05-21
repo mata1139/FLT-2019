@@ -1,3 +1,4 @@
 ﻿  Scanner.cpp
-C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(98,12): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(108,56): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\MiniCScanner\Scanner.cpp(123,12): warning C4101: 'tmp' :참조되지 않은 지역 변수입니다.
   MiniCScanner.vcxproj -> C:\Users\USER\Desktop\동국대학교\2021년 3학년 2학기\형식언어_손윤식\과제\Scanner\FLT-2019\MiniC Scanner\C\MiniCScanner\x64\Debug\MiniCScanner.exe

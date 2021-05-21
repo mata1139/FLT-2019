@@ -16,6 +16,10 @@ struct tokenType { //toeknType class
 		int num; //실제 value
 		double d_num; //double 자료형 value
 	} value;
+
+	char* filename; //파일 이름
+	int lineno; //라인 수
+	int colno;  //column 위치
 };
 
 
